@@ -7,7 +7,7 @@ var gulp = require('gulp'),
   autoprefixer = require('gulp-autoprefixer'),
   pug = require('gulp-pug'),
   gutil = require('gulp-util');
-  
+
 gulp.task('pug', function () {
   // Compile .pug files to html
   gulp.src([
@@ -32,7 +32,7 @@ gulp.task('watch', function () {
     gulp.src('sass/*.sass')
       .pipe(sass({ outputStyle: 'compressed' }))
       .pipe(autoprefixer())
-      .pipe(gulp.dest('public/css/'));
+      .pipe(gulp.dest('static/css/'));
   });
 
 });
