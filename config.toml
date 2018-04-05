@@ -1,7 +1,7 @@
 baseurl                 = "/"               # Your domain name. Must end with "/"
 languageCode            = "en-us"
 title                   = "welcome to the RUTH ZONE"
-theme                   = "sam"
+theme                   = "hugo-theme-sam"
 # googleAnalytics       = "xxx"             # Tracking code, eg. "UA-111111111-1"
 
 [params]
@@ -21,17 +21,13 @@ theme                   = "sam"
     primaryImage        = "/tn.png"                     # Image that shows on Twitter cards and OpenGraph links
 
 [[params.mainMenu]]
-    link = "#"
+    link = "https://twitter.com/purrloftruth"
     text = "hey, what's up?"
 
 [[params.mainMenu]]
-    link = "#"
+    link = "https://twitch.tv/ruthharris"
     text = "it's your girl, ruth."
 
 [[params.mainMenu]]
-    link = "https://twitter.com/purrloftruth"
-    text = "tweet me"
-
-[[params.mainMenu]]
-    link = "https://twitch.tv/ruthharris"
-    text = "watch me"
+    link = "https://purrloftruth.tumblr.com"
+    text = "welcome to RUTH ZONE."
