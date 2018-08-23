@@ -25,7 +25,7 @@ theme                   = "hugo-theme-sam"
     text = "hey, what's up?"
 
 [[params.mainMenu]]
-    link = "https://twitch.tv/ruthharris"
+    link = "https://twitch.tv/coralfluff"
     text = "it's your girl, ruth."
 
 [[params.mainMenu]]
