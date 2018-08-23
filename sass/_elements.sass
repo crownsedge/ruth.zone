@@ -6,7 +6,7 @@
     @media screen and (max-width: 736px)
         width: 90%
 
-#big-link
+.big-link
     font-family: $font
     font-size: 3rem
     font-weight: 300
@@ -24,6 +24,10 @@
     margin: 2rem 0
     line-height: 2em
     letter-spacing: 2px
+    div
+        width: 100%
+        height: 100%
+        margin-bottom: 1em
     & h1,h2,h3
         margin: 1em 0em
         text-align: left
@@ -31,30 +35,39 @@
         margin-bottom: 1em
         line-height: 1.8
         letter-spacing: 1.5px
+        opacity: 0.8
+    & .highlight
+        width: 100%
     & pre
-        border-radius: 2px
-        background-color: lighten($pink, 10%)
+        line-height: 2rem
+        border-radius: 3px
         padding: 1rem
+        overflow-x: auto
+        background-color: $code-block
+        width: 100%
+        margin-bottom: 1em
     & pre > code
         border: none
     & code
         font-size: 0.9rem
         font-family: 'Source Code Pro', monospace
-        background-color: lighten($pink, 10%)
-        padding: 0.2rem
-        border-radius: 2px
-        overflow-x: scroll
+        padding: 0.1rem
+        border-radius: 3px
+        border: 1px solid $links
     & img
         width: 100%
         max-width: 100%
         display: block
         margin: 2rem auto
+        opacity: 1
     & blockquote
         background-color: $links
-        color: $pink
+        color: $dark-grey
         padding: 2rem
         margin: 2rem 1rem 2rem 1rem
         border-radius: 3px
+        a
+            color: $black
         & ul
             margin-top: 1rem
         & li
@@ -71,13 +84,23 @@
             text-align: center
             border: 1px solid $links
     & li
-        list-style: disc inside
-        margin-left: 1rem
         line-height: 2
+        padding-left: 0.4rem
         &:last-child
             margin-bottom: 1rem
+    & ul
+        list-style: disc outside
+        padding-left: 2rem
+    & ol
+        list-style: decimal outside
+        padding-left: 2rem
+    & .gist
+        width: 100%
+        td, th
+            text-align: left
+            border: 0
 
-#tag
+.tag
     padding: 0.25em 0em
     margin-right: 0.5em
     opacity: 0.6
@@ -98,8 +121,10 @@
     height: 100%
     width: 100%
     object-fit: cover
+    opacity: 1
 
 .grid > div > a > img
     height: 100%
     width: 100%
     object-fit: cover
+    opacity: 1
